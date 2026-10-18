@@ -22,7 +22,7 @@ type Map interface {
 }
 
 // Scanner is implemented by ordered indexes
-// 
+//
 // Scan calls fn for every key k with low <= k < hi in lexicographic order until fn -> false
 // A nil lo = from the first key
 // A nil hi = to the last key

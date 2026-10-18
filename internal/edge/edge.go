@@ -125,7 +125,7 @@ func packPrefix(p []byte) uint64 {
 func (e Edge) Frozen() bool { return uint64(e)&frozenBit != 0 }
 
 // IsValue reports whether the child is a value cell
-func (e Edge) IsValue() bool { return uint64(64)&valueBit != 0 }
+func (e Edge) IsValue() bool { return uint64(e)&valueBit != 0 }
 
 // Handle returns the child's arena slot, or 0 if the child is null
 func (e Edge) Handle() Handle { return Handle(uint64(e) & handleMask) }
