@@ -1,0 +1,9 @@
+# Benchmark output and profiles
+/results/
+*.csv
+*.prof
+*.test
+*.out
+
+# Build artifacts
+/harness
